@@ -15,6 +15,10 @@
 2. 在我们设计计数器的时候，对于第一个计数器，大部分情况都是先以时钟周期为单位进行计数（每次clk的高电平触发，都会让计数器加一），也就是说先计算1s内包含多少个时钟周期，对他们进行计数。
 3. 剩下的计数器，就可以把前一个计数器当作整体，继续计数。以此类推，直到设计出自己合适的波形。
 
+#### <b>实验环境</b>
+1. Quartus进行编程。
+2. Modelsim进行仿真。
+
 ***
 ***
 <div align = "center" style = "color:red">1 flashing light experiment</div>
@@ -33,3 +37,7 @@ This project uses 1 LED light (LED1) to realize the flashing light function. The
 1. For each part, the period they include is different. So we're going to use x-1. Then assign a value to x through a large counter. The ultimate goal of our experiment is to realize our output waveform by using a counter. For an output waveform, there are actually many counter design methods, choose the most suitable one.
 2. When we design the counter, for the first counter, in most cases we first count in units of clock cycles (each time clk is triggered by a high level, the counter will be incremented by one), that is to say, it is calculated first How many clock cycles are included in 1s, count them.
 3. For the remaining counters, you can treat the previous counter as a whole and continue counting. And so on until you design your own suitable waveform.
+
+#### <b>Experimental environment</b>
+1. Quartus for programming.
+2. Modelsim performs simulation.
