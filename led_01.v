@@ -51,6 +51,7 @@ reg led;
 
 always  @(posedge clk or negedge rst_n)begin
     if(rst_n==1'b0)begin
+        led<=0;
     end
     else if(cnt0 == 50000000-1)begin
         led<=0;
